@@ -1,0 +1,141 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://example.org/genai-ontology#"
+     xml:base="http://example.org/genai-ontology"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+
+    <owl:Ontology rdf:about="http://example.org/genai-ontology">
+        <rdfs:comment>생성형 AI 연구원 및 프로젝트 구성원 온톨로지</rdfs:comment>
+    </owl:Ontology>
+
+    <owl:ObjectProperty rdf:about="#performs">
+        <rdfs:label xml:lang="ko">수행한다 / 수행직무</rdfs:label>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="#hasSkill">
+        <rdfs:label xml:lang="ko">보유기술</rdfs:label>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="#consistsOf">
+        <rdfs:label xml:lang="ko">구성된다</rdfs:label>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="#requires">
+        <rdfs:label xml:lang="ko">필요로 한다</rdfs:label>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="#holdsDegree">
+        <rdfs:label xml:lang="ko">학위보유</rdfs:label>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="#authoredThesis">
+        <rdfs:label xml:lang="ko">논문작성</rdfs:label>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="#hasSkillLevel">
+        <rdfs:label xml:lang="ko">전문분야</rdfs:label>
+    </owl:ObjectProperty>
+
+    <owl:Class rdf:about="#O_ModelArch"><rdfs:label xml:lang="ko">모델 아키텍처 설계</rdfs:label></owl:Class>
+    <owl:Class rdf:about="#O_Eval"><rdfs:label xml:lang="ko">성능 지표 평가 (Evaluation)</rdfs:label></owl:Class>
+    <owl:Class rdf:about="#O_DL_Framework"><rdfs:label xml:lang="ko">Deep Learning Framework</rdfs:label></owl:Class>
+    <owl:Class rdf:about="#O_NLP"><rdfs:label xml:lang="ko">자연어 처리 (NLP)</rdfs:label></owl:Class>
+    <owl:Class rdf:about="#O_GenAlgo"><rdfs:label xml:lang="ko">생성 알고리즘</rdfs:label></owl:Class>
+    <owl:Class rdf:about="#O_FineTuning"><rdfs:label xml:lang="ko">모델 파인튜닝</rdfs:label></owl:Class>
+    <owl:Class rdf:about="#O_Modeller"><rdfs:label xml:lang="ko">모델링 설계자</rdfs:label></owl:Class>
+    <owl:Class rdf:about="#O_AIEngineer"><rdfs:label xml:lang="ko">AI 엔지니어</rdfs:label></owl:Class>
+    <owl:Class rdf:about="#O_DataExpert"><rdfs:label xml:lang="ko">데이터 전문가</rdfs:label></owl:Class>
+    <owl:Class rdf:about="#O_DistComputing"><rdfs:label xml:lang="ko">대규모 분산 컴퓨팅 자원</rdfs:label></owl:Class>
+    <owl:Class rdf:about="#O_RealTimeSearch"><rdfs:label xml:lang="ko">실시간 정보 검색 모듈</rdfs:label></owl:Class>
+    <owl:Class rdf:about="#O_VectorDB"><rdfs:label xml:lang="ko">Vector DB</rdfs:label></owl:Class>
+    <owl:Class rdf:about="#O_LLM_Models"><rdfs:label xml:lang="ko">대형언어모델(LLM), 임베딩 모델, 리랭커 모델</rdfs:label></owl:Class>
+    <owl:Class rdf:about="#O_EncDec"><rdfs:label xml:lang="ko">인코더, 디코더, 잠재 공간</rdfs:label></owl:Class>
+    <owl:Class rdf:about="#O_TextEmb"><rdfs:label xml:lang="ko">텍스트 임베딩</rdfs:label></owl:Class>
+    
+    <owl:Class rdf:about="#O_Degree_CSAI"><rdfs:label xml:lang="ko">컴공/인공지능 전공 석사</rdfs:label></owl:Class>
+    <owl:Class rdf:about="#O_Thesis_GenAI"><rdfs:label xml:lang="ko">생성형 AI 연구</rdfs:label></owl:Class>
+    <owl:Class rdf:about="#O_Proj_PowerAI"><rdfs:label xml:lang="ko">전력분야 인공지능 프로젝트</rdfs:label></owl:Class>
+    <owl:Class rdf:about="#O_Task_PowerRes"><rdfs:label xml:lang="ko">전력분야 연구자료 분석</rdfs:label></owl:Class>
+    <owl:Class rdf:about="#O_Task_HR_Social"><rdfs:label xml:lang="ko">인사정보 및 소셜 데이터 분석</rdfs:label></owl:Class>
+    <owl:Class rdf:about="#O_Skill_NLP_LLM"><rdfs:label xml:lang="ko">자연어 처리 (NLP) 및 LLM</rdfs:label></owl:Class>
+    <owl:Class rdf:about="#O_Skill_CloudBigData"><rdfs:label xml:lang="ko">클라우드 및 빅데이터 분산처리</rdfs:label></owl:Class>
+    <owl:Class rdf:about="#O_Skill_Platform"><rdfs:label xml:lang="ko">플랫폼 기술 및 인프라 연구</rdfs:label></owl:Class>
+    <owl:Class rdf:about="#O_Domain_Power"><rdfs:label xml:lang="ko">전력시스템 도메인 지식 (High)</rdfs:label></owl:Class>
+    <owl:Class rdf:about="#O_Domain_AI_Modelling"><rdfs:label xml:lang="ko">AI 모델링 숙련도 (High)</rdfs:label></owl:Class>
+
+    <owl:Class rdf:about="#O_Thesis_AI_Platform"><rdfs:label xml:lang="ko">AI 플랫폼</rdfs:label></owl:Class>
+    <owl:Class rdf:about="#O_Proj_LegalSearch"><rdfs:label xml:lang="ko">전력분야 법무정보 검색 시스템 개발</rdfs:label></owl:Class>
+    <owl:Class rdf:about="#O_Task_AIEngine_Mgmt"><rdfs:label xml:lang="ko">전력 AI 엔진 시스템 사후관리</rdfs:label></owl:Class>
+    <owl:Class rdf:about="#O_Skill_AICloudPlatform"><rdfs:label xml:lang="ko">AI 및 클라우드 가상화 플랫폼</rdfs:label></owl:Class>
+    <owl:Class rdf:about="#O_Skill_BigDataAnal"><rdfs:label xml:lang="ko">빅데이터 분석</rdfs:label></owl:Class>
+    <owl:Class rdf:about="#O_Skill_CV_NLP"><rdfs:label xml:lang="ko">컴퓨터 비전 및 자연어 처리</rdfs:label></owl:Class>
+
+    <owl:Class rdf:about="#O_Thesis_LLM_Learn"><rdfs:label xml:lang="ko">LLM 학습 (RAG, RLHF)</rdfs:label></owl:Class>
+    <owl:Class rdf:about="#O_Proj_Chatbot"><rdfs:label xml:lang="ko">감사실 챗봇 프로젝트</rdfs:label></owl:Class>
+    <owl:Class rdf:about="#O_Proj_ArcDetect"><rdfs:label xml:lang="ko">아크탐지 솔루션</rdfs:label></owl:Class>
+    <owl:Class rdf:about="#O_Skill_LLM_Learn"><rdfs:label xml:lang="ko">LLM 학습(PT, SFT, RLHF)</rdfs:label></owl:Class>
+    <owl:Class rdf:about="#O_Skill_PyTorch"><rdfs:label xml:lang="ko">Python, Pytorch 기반 코딩</rdfs:label></owl:Class>
+    <owl:Class rdf:about="#O_Domain_LangModel"><rdfs:label xml:lang="ko">언어모델 학습 방법론 (High)</rdfs:label></owl:Class>
+    <owl:Class rdf:about="#O_Domain_Framework"><rdfs:label xml:lang="ko">Framework 설계</rdfs:label></owl:Class>
+
+    <owl:Class rdf:about="#Subj_GenAI_Researcher">
+        <rdfs:label xml:lang="ko">생성형AI 연구원</rdfs:label>
+        <rdfs:subClassOf><owl:Restriction><owl:onProperty rdf:resource="#performs"/><owl:someValuesFrom rdf:resource="#O_ModelArch"/></owl:Restriction></rdfs:subClassOf>
+        <rdfs:subClassOf><owl:Restriction><owl:onProperty rdf:resource="#performs"/><owl:someValuesFrom rdf:resource="#O_Eval"/></owl:Restriction></rdfs:subClassOf>
+        <rdfs:subClassOf><owl:Restriction><owl:onProperty rdf:resource="#hasSkill"/><owl:someValuesFrom rdf:resource="#O_DL_Framework"/></owl:Restriction></rdfs:subClassOf>
+        <rdfs:subClassOf><owl:Restriction><owl:onProperty rdf:resource="#hasSkill"/><owl:someValuesFrom rdf:resource="#O_NLP"/></owl:Restriction></rdfs:subClassOf>
+        <rdfs:subClassOf><owl:Restriction><owl:onProperty rdf:resource="#hasSkill"/><owl:someValuesFrom rdf:resource="#O_GenAlgo"/></owl:Restriction></rdfs:subClassOf>
+        <rdfs:subClassOf><owl:Restriction><owl:onProperty rdf:resource="#hasSkill"/><owl:someValuesFrom rdf:resource="#O_FineTuning"/></owl:Restriction></rdfs:subClassOf>
+        <rdfs:subClassOf><owl:Restriction><owl:onProperty rdf:resource="#consistsOf"/><owl:someValuesFrom rdf:resource="#O_Modeller"/></owl:Restriction></rdfs:subClassOf>
+        <rdfs:subClassOf><owl:Restriction><owl:onProperty rdf:resource="#consistsOf"/><owl:someValuesFrom rdf:resource="#O_AIEngineer"/></owl:Restriction></rdfs:subClassOf>
+        <rdfs:subClassOf><owl:Restriction><owl:onProperty rdf:resource="#consistsOf"/><owl:someValuesFrom rdf:resource="#O_DataExpert"/></owl:Restriction></rdfs:subClassOf>
+    </owl:Class>
+
+    <owl:Class rdf:about="#Subj_GenAI">
+        <rdfs:label xml:lang="ko">생성형AI</rdfs:label>
+        <rdfs:subClassOf><owl:Restriction><owl:onProperty rdf:resource="#requires"/><owl:someValuesFrom rdf:resource="#O_DistComputing"/></owl:Restriction></rdfs:subClassOf>
+        <rdfs:subClassOf><owl:Restriction><owl:onProperty rdf:resource="#requires"/><owl:someValuesFrom rdf:resource="#O_RealTimeSearch"/></owl:Restriction></rdfs:subClassOf>
+        <rdfs:subClassOf><owl:Restriction><owl:onProperty rdf:resource="#requires"/><owl:someValuesFrom rdf:resource="#O_VectorDB"/></owl:Restriction></rdfs:subClassOf>
+        <rdfs:subClassOf><owl:Restriction><owl:onProperty rdf:resource="#requires"/><owl:someValuesFrom rdf:resource="#O_LLM_Models"/></owl:Restriction></rdfs:subClassOf>
+        <rdfs:subClassOf><owl:Restriction><owl:onProperty rdf:resource="#consistsOf"/><owl:someValuesFrom rdf:resource="#O_EncDec"/></owl:Restriction></rdfs:subClassOf>
+        <rdfs:subClassOf><owl:Restriction><owl:onProperty rdf:resource="#performs"/><owl:someValuesFrom rdf:resource="#O_TextEmb"/></owl:Restriction></rdfs:subClassOf>
+    </owl:Class>
+
+    <owl:Class rdf:about="#Subj_JangMinYoung">
+        <rdfs:label xml:lang="ko">장민영</rdfs:label>
+        <rdfs:subClassOf><owl:Restriction><owl:onProperty rdf:resource="#holdsDegree"/><owl:someValuesFrom rdf:resource="#O_Degree_CSAI"/></owl:Restriction></rdfs:subClassOf>
+        <rdfs:subClassOf><owl:Restriction><owl:onProperty rdf:resource="#authoredThesis"/><owl:someValuesFrom rdf:resource="#O_Thesis_GenAI"/></owl:Restriction></rdfs:subClassOf>
+        <rdfs:subClassOf><owl:Restriction><owl:onProperty rdf:resource="#performs"/><owl:someValuesFrom rdf:resource="#O_Proj_PowerAI"/></owl:Restriction></rdfs:subClassOf>
+        <rdfs:subClassOf><owl:Restriction><owl:onProperty rdf:resource="#performs"/><owl:someValuesFrom rdf:resource="#O_Task_PowerRes"/></owl:Restriction></rdfs:subClassOf>
+        <rdfs:subClassOf><owl:Restriction><owl:onProperty rdf:resource="#performs"/><owl:someValuesFrom rdf:resource="#O_Task_HR_Social"/></owl:Restriction></rdfs:subClassOf>
+        <rdfs:subClassOf><owl:Restriction><owl:onProperty rdf:resource="#hasSkill"/><owl:someValuesFrom rdf:resource="#O_Skill_NLP_LLM"/></owl:Restriction></rdfs:subClassOf>
+        <rdfs:subClassOf><owl:Restriction><owl:onProperty rdf:resource="#hasSkill"/><owl:someValuesFrom rdf:resource="#O_Skill_CloudBigData"/></owl:Restriction></rdfs:subClassOf>
+        <rdfs:subClassOf><owl:Restriction><owl:onProperty rdf:resource="#hasSkill"/><owl:someValuesFrom rdf:resource="#O_Skill_Platform"/></owl:Restriction></rdfs:subClassOf>
+        <rdfs:subClassOf><owl:Restriction><owl:onProperty rdf:resource="#hasSkillLevel"/><owl:someValuesFrom rdf:resource="#O_Domain_Power"/></owl:Restriction></rdfs:subClassOf>
+        <rdfs:subClassOf><owl:Restriction><owl:onProperty rdf:resource="#hasSkillLevel"/><owl:someValuesFrom rdf:resource="#O_Domain_AI_Modelling"/></owl:Restriction></rdfs:subClassOf>
+    </owl:Class>
+
+    <owl:Class rdf:about="#Subj_LeeJungIl">
+        <rdfs:label xml:lang="ko">이정일</rdfs:label>
+        <rdfs:subClassOf><owl:Restriction><owl:onProperty rdf:resource="#holdsDegree"/><owl:someValuesFrom rdf:resource="#O_Degree_CSAI"/></owl:Restriction></rdfs:subClassOf>
+        <rdfs:subClassOf><owl:Restriction><owl:onProperty rdf:resource="#authoredThesis"/><owl:someValuesFrom rdf:resource="#O_Thesis_AI_Platform"/></owl:Restriction></rdfs:subClassOf>
+        <rdfs:subClassOf><owl:Restriction><owl:onProperty rdf:resource="#performs"/><owl:someValuesFrom rdf:resource="#O_Proj_PowerAI"/></owl:Restriction></rdfs:subClassOf>
+        <rdfs:subClassOf><owl:Restriction><owl:onProperty rdf:resource="#performs"/><owl:someValuesFrom rdf:resource="#O_Proj_LegalSearch"/></owl:Restriction></rdfs:subClassOf>
+        <rdfs:subClassOf><owl:Restriction><owl:onProperty rdf:resource="#performs"/><owl:someValuesFrom rdf:resource="#O_Task_AIEngine_Mgmt"/></owl:Restriction></rdfs:subClassOf>
+        <rdfs:subClassOf><owl:Restriction><owl:onProperty rdf:resource="#hasSkill"/><owl:someValuesFrom rdf:resource="#O_Skill_AICloudPlatform"/></owl:Restriction></rdfs:subClassOf>
+        <rdfs:subClassOf><owl:Restriction><owl:onProperty rdf:resource="#hasSkill"/><owl:someValuesFrom rdf:resource="#O_Skill_BigDataAnal"/></owl:Restriction></rdfs:subClassOf>
+        <rdfs:subClassOf><owl:Restriction><owl:onProperty rdf:resource="#hasSkill"/><owl:someValuesFrom rdf:resource="#O_Skill_CV_NLP"/></owl:Restriction></rdfs:subClassOf>
+        <rdfs:subClassOf><owl:Restriction><owl:onProperty rdf:resource="#hasSkillLevel"/><owl:someValuesFrom rdf:resource="#O_Domain_Power"/></owl:Restriction></rdfs:subClassOf>
+        <rdfs:subClassOf><owl:Restriction><owl:onProperty rdf:resource="#hasSkillLevel"/><owl:someValuesFrom rdf:resource="#O_Domain_AI_Modelling"/></owl:Restriction></rdfs:subClassOf>
+    </owl:Class>
+
+    <owl:Class rdf:about="#Subj_LeeHyunMin">
+        <rdfs:label xml:lang="ko">이현민</rdfs:label>
+        <rdfs:subClassOf><owl:Restriction><owl:onProperty rdf:resource="#holdsDegree"/><owl:someValuesFrom rdf:resource="#O_Degree_CSAI"/></owl:Restriction></rdfs:subClassOf>
+        <rdfs:subClassOf><owl:Restriction><owl:onProperty rdf:resource="#authoredThesis"/><owl:someValuesFrom rdf:resource="#O_Thesis_LLM_Learn"/></owl:Restriction></rdfs:subClassOf>
+        <rdfs:subClassOf><owl:Restriction><owl:onProperty rdf:resource="#performs"/><owl:someValuesFrom rdf:resource="#O_Proj_Chatbot"/></owl:Restriction></rdfs:subClassOf>
+        <rdfs:subClassOf><owl:Restriction><owl:onProperty rdf:resource="#performs"/><owl:someValuesFrom rdf:resource="#O_Proj_ArcDetect"/></owl:Restriction></rdfs:subClassOf>
+        <rdfs:subClassOf><owl:Restriction><owl:onProperty rdf:resource="#hasSkill"/><owl:someValuesFrom rdf:resource="#O_Skill_NLP_LLM"/></owl:Restriction></rdfs:subClassOf>
+        <rdfs:subClassOf><owl:Restriction><owl:onProperty rdf:resource="#hasSkill"/><owl:someValuesFrom rdf:resource="#O_Skill_LLM_Learn"/></owl:Restriction></rdfs:subClassOf>
+        <rdfs:subClassOf><owl:Restriction><owl:onProperty rdf:resource="#hasSkill"/><owl:someValuesFrom rdf:resource="#O_Skill_PyTorch"/></owl:Restriction></rdfs:subClassOf>
+        <rdfs:subClassOf><owl:Restriction><owl:onProperty rdf:resource="#hasSkillLevel"/><owl:someValuesFrom rdf:resource="#O_Domain_LangModel"/></owl:Restriction></rdfs:subClassOf>
+        <rdfs:subClassOf><owl:Restriction><owl:onProperty rdf:resource="#hasSkillLevel"/><owl:someValuesFrom rdf:resource="#O_Domain_Framework"/></owl:Restriction></rdfs:subClassOf>
+    </owl:Class>
+
+</rdf:RDF>
