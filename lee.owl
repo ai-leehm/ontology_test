@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.example.org/ontology#"
+     xml:base="http://www.example.org/ontology"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+
+    <owl:Ontology rdf:about="http://www.example.org/ontology"/>
+
+    <owl:ObjectProperty rdf:about="#연구주제"/>
+    <owl:ObjectProperty rdf:about="#연구과제"/>
+    <owl:ObjectProperty rdf:about="#보유기술"/>
+    <owl:ObjectProperty rdf:about="#필요기술"/>
+
+    <owl:NamedIndividual rdf:about="#이현민">
+        <연구주제 rdf:resource="#생성형AI"/>
+        <연구주제 rdf:resource="#컴퓨터비전"/>
+        <연구과제 rdf:resource="#영상AI기반_배전전력구_지중케이블_아크탐지_솔루션_개발"/>
+        <연구과제 rdf:resource="#AI활용_반부패_청렴_및_계약_업무_적정성_안내_챗봇_개발"/>
+        <보유기술 rdf:resource="#Python"/>
+        <보유기술 rdf:resource="#PyTorch"/>
+        <보유기술 rdf:resource="#LLM"/>
+        <보유기술 rdf:resource="#자연어처리"/>
+        <보유기술 rdf:resource="#Pretraining"/>
+        <보유기술 rdf:resource="#Supervised_Fine-Tuning"/>
+        <보유기술 rdf:resource="#Reinforcement_Learning"/>
+        <보유기술 rdf:resource="#생성형AI"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="#생성형AI">
+        <필요기술 rdf:resource="#Python"/>
+        <필요기술 rdf:resource="#PyTorch"/>
+        <필요기술 rdf:resource="#LLM"/>
+        <필요기술 rdf:resource="#자연어처리"/>
+        <필요기술 rdf:resource="#대규모_분산_처리"/>
+        <필요기술 rdf:resource="#데이터_실시간_처리"/>
+        <필요기술 rdf:resource="#구조도_설계"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="#컴퓨터비전">
+        <필요기술 rdf:resource="#Python"/>
+        <필요기술 rdf:resource="#DeepLearning"/>
+        <필요기술 rdf:resource="#Video_Processing"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="#영상AI기반_배전전력구_지중케이블_아크탐지_솔루션_개발">
+        <필요기술 rdf:resource="#Python"/>
+        <필요기술 rdf:resource="#DeepLearning"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="#AI활용_반부패_청렴_및_계약_업무_적정성_안내_챗봇_개발">
+        <필요기술 rdf:resource="#Python"/>
+        <필요기술 rdf:resource="#DeepLearning"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="#Python"/>
+    <owl:NamedIndividual rdf:about="#PyTorch"/>
+    <owl:NamedIndividual rdf:about="#LLM"/>
+    <owl:NamedIndividual rdf:about="#자연어처리"/>
+    <owl:NamedIndividual rdf:about="#DeepLearning"/>
+    </rdf:RDF>
