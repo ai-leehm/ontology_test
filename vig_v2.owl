@@ -1,0 +1,215 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://example.org/ontology#"
+     xml:base="http://example.org/ontology"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:ex="http://example.org/ontology#">
+    <owl:Ontology rdf:about="http://example.org/ontology"/>
+
+    <owl:ObjectProperty rdf:about="http://example.org/ontology#hasSkill">
+        <rdfs:domain rdf:resource="http://example.org/ontology#Person"/>
+        <rdfs:range rdf:resource="http://example.org/ontology#Skill"/>
+        <rdfs:label>보유역량</rdfs:label>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://example.org/ontology#requiresSkill">
+        <rdfs:domain rdf:resource="http://example.org/ontology#Project"/>
+        <rdfs:range rdf:resource="http://example.org/ontology#Skill"/>
+        <rdfs:label>필요역량</rdfs:label>
+    </owl:ObjectProperty>
+
+    <owl:Class rdf:about="http://example.org/ontology#Person">
+        <rdfs:label>연구원(Person)</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="http://example.org/ontology#Project">
+        <rdfs:label>연구과제(Project)</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="http://example.org/ontology#Skill">
+        <rdfs:label>역량(Skill)</rdfs:label>
+    </owl:Class>
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology#%EA%B9%80%EC%95%84%EC%98%81">
+        <rdf:type rdf:resource="http://example.org/ontology#Person"/>
+        <rdfs:label>김아영</rdfs:label>
+        <hasSkill rdf:resource="http://example.org/ontology#NLP"/>
+        <hasSkill rdf:resource="http://example.org/ontology#Programming"/>
+        <hasSkill rdf:resource="http://example.org/ontology#AI_Model_Dev"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://example.org/ontology#NLP">
+        <rdf:type rdf:resource="http://example.org/ontology#Skill"/>
+        <rdfs:label>자연어 처리(NLP)</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://example.org/ontology#AI_Model_Dev">
+        <rdf:type rdf:resource="http://example.org/ontology#Skill"/>
+        <rdfs:label>AI/머신러닝 모델링</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://example.org/ontology#Programming">
+        <rdf:type rdf:resource="http://example.org/ontology#Skill"/>
+        <rdfs:label>프로그래밍 언어</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://example.org/ontology#%EA%B9%80%EC%98%81%EC%A4%80">
+        <rdf:type rdf:resource="http://example.org/ontology#Person"/>
+        <rdfs:label>김영준</rdfs:label>
+        <hasSkill rdf:resource="http://example.org/ontology#Data_Platform"/>
+        <hasSkill rdf:resource="http://example.org/ontology#Computer_Vision"/>
+        <hasSkill rdf:resource="http://example.org/ontology#Programming"/>
+        <hasSkill rdf:resource="http://example.org/ontology#AI_Model_Dev"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://example.org/ontology#Computer_Vision">
+        <rdf:type rdf:resource="http://example.org/ontology#Skill"/>
+        <rdfs:label>컴퓨터 비전(CV)</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://example.org/ontology#Data_Platform">
+        <rdf:type rdf:resource="http://example.org/ontology#Skill"/>
+        <rdfs:label>데이터 인프라 및 플랫폼</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://example.org/ontology#%EA%B9%80%EC%A2%85%EC%A3%BC">
+        <rdf:type rdf:resource="http://example.org/ontology#Person"/>
+        <rdfs:label>김종주</rdfs:label>
+        <hasSkill rdf:resource="http://example.org/ontology#Network_Telecom"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://example.org/ontology#Network_Telecom">
+        <rdf:type rdf:resource="http://example.org/ontology#Skill"/>
+        <rdfs:label>네트워크 및 통신</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://example.org/ontology#%EB%B0%95%EB%B3%91%EC%B2%A0">
+        <rdf:type rdf:resource="http://example.org/ontology#Person"/>
+        <rdfs:label>박병철</rdfs:label>
+        <hasSkill rdf:resource="http://example.org/ontology#System_Control"/>
+        <hasSkill rdf:resource="http://example.org/ontology#Programming"/>
+        <hasSkill rdf:resource="http://example.org/ontology#AI_Model_Dev"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://example.org/ontology#System_Control">
+        <rdf:type rdf:resource="http://example.org/ontology#Skill"/>
+        <rdfs:label>시스템/제어/시뮬레이션</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://example.org/ontology#%EB%B0%95%EC%A4%80%EB%B2%94">
+        <rdf:type rdf:resource="http://example.org/ontology#Person"/>
+        <rdfs:label>박준범</rdfs:label>
+        <hasSkill rdf:resource="http://example.org/ontology#Computer_Vision"/>
+        <hasSkill rdf:resource="http://example.org/ontology#Programming"/>
+        <hasSkill rdf:resource="http://example.org/ontology#AI_Model_Dev"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://example.org/ontology#%EC%8B%A0%EC%88%98%ED%98%B8">
+        <rdf:type rdf:resource="http://example.org/ontology#Person"/>
+        <rdfs:label>신수호</rdfs:label>
+        <hasSkill rdf:resource="http://example.org/ontology#System_Control"/>
+        <hasSkill rdf:resource="http://example.org/ontology#Programming"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://example.org/ontology#%EC%96%91%ED%98%84">
+        <rdf:type rdf:resource="http://example.org/ontology#Person"/>
+        <rdfs:label>양현</rdfs:label>
+        <hasSkill rdf:resource="http://example.org/ontology#Power_Domain"/>
+        <hasSkill rdf:resource="http://example.org/ontology#Data_Platform"/>
+        <hasSkill rdf:resource="http://example.org/ontology#Network_Telecom"/>
+        <hasSkill rdf:resource="http://example.org/ontology#System_Control"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://example.org/ontology#Power_Domain">
+        <rdf:type rdf:resource="http://example.org/ontology#Skill"/>
+        <rdfs:label>전력/에너지 도메인</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://example.org/ontology#%EC%9D%B4%ED%98%84%EB%AF%BC">
+        <rdf:type rdf:resource="http://example.org/ontology#Person"/>
+        <rdfs:label>이현민</rdfs:label>
+        <hasSkill rdf:resource="http://example.org/ontology#NLP"/>
+        <hasSkill rdf:resource="http://example.org/ontology#Programming"/>
+        <hasSkill rdf:resource="http://example.org/ontology#AI_Model_Dev"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://example.org/ontology#%EC%9E%A5%EB%AF%BC%EC%98%81">
+        <rdf:type rdf:resource="http://example.org/ontology#Person"/>
+        <rdfs:label>장민영</rdfs:label>
+        <hasSkill rdf:resource="http://example.org/ontology#Data_Platform"/>
+        <hasSkill rdf:resource="http://example.org/ontology#NLP"/>
+        <hasSkill rdf:resource="http://example.org/ontology#AI_Model_Dev"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://example.org/ontology#%EC%B5%9C%EB%B0%B1%EA%B7%A0">
+        <rdf:type rdf:resource="http://example.org/ontology#Person"/>
+        <rdfs:label>최백균</rdfs:label>
+        <hasSkill rdf:resource="http://example.org/ontology#Data_Platform"/>
+        <hasSkill rdf:resource="http://example.org/ontology#Network_Telecom"/>
+        <hasSkill rdf:resource="http://example.org/ontology#Programming"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://example.org/ontology#%EC%B5%9C%EC%A7%80%EC%9B%90">
+        <rdf:type rdf:resource="http://example.org/ontology#Person"/>
+        <rdfs:label>최지원</rdfs:label>
+        <hasSkill rdf:resource="http://example.org/ontology#Power_Domain"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://example.org/ontology#%EC%98%81%EC%83%81_AI%EA%B8%B0%EB%B0%98_%EB%B0%B0%EC%A0%84%EC%A0%84%EB%A0%A5%EA%B5%AC_%EC%A7%80%EC%A4%91%EC%BC%80%EC%9D%B4%EB%B8%94_%EC%95%84%ED%81%AC%ED%83%90%EC%A7%80_%EC%86%94%EB%A3%A8%EC%85%98_%EA%B0%9C%EB%B0%9C">
+        <rdf:type rdf:resource="http://example.org/ontology#Project"/>
+        <rdfs:label>영상 AI기반 배전전력구 지중케이블 아크탐지 솔루션 개발</rdfs:label>
+        <requiresSkill rdf:resource="http://example.org/ontology#Computer_Vision"/>
+        <requiresSkill rdf:resource="http://example.org/ontology#Programming"/>
+        <requiresSkill rdf:resource="http://example.org/ontology#AI_Model_Dev"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://example.org/ontology#AI%ED%99%9C%EC%9A%A9_%EB%B0%98%EB%B6%80%ED%8C%A8_%EC%B2%AD%EB%A0%B4_%EB%B0%8F_%EA%B3%84%EC%95%BD_%EC%97%85%EB%AC%B4_%EC%A0%81%EC%A0%95%EC%84%B1_%EC%95%88%EB%82%B4_%EC%B1%97%EB%B4%87_%EA%B0%9C%EB%B0%9C">
+        <rdf:type rdf:resource="http://example.org/ontology#Project"/>
+        <rdfs:label>AI활용 반부패·청렴 및 계약 업무 적정성 안내 챗봇 개발</rdfs:label>
+        <requiresSkill rdf:resource="http://example.org/ontology#NLP"/>
+        <requiresSkill rdf:resource="http://example.org/ontology#Programming"/>
+        <requiresSkill rdf:resource="http://example.org/ontology#AI_Model_Dev"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://example.org/ontology#%ED%95%AD%EA%B3%B5%EC%82%AC%EC%A7%84_%ED%99%9C%EC%9A%A9_%ED%83%9C%EC%96%91%EA%B4%91_%EB%B0%9C%EC%A0%84%EC%9A%A9%EB%9F%89_%EC%82%B0%EC%B6%9C%EC%9D%84_%EC%9C%84%ED%95%9C_AI_%EB%AA%A8%EB%8D%B8_%EA%B0%9C%EB%B0%9C_%EB%B0%8F_%EC%8B%A4%EC%A6%9D">
+        <rdf:type rdf:resource="http://example.org/ontology#Project"/>
+        <rdfs:label>항공사진 활용 태양광 발전용량 산출을 위한 AI 모델 개발 및 실증</rdfs:label>
+        <requiresSkill rdf:resource="http://example.org/ontology#System_Control"/>
+        <requiresSkill rdf:resource="http://example.org/ontology#Computer_Vision"/>
+        <requiresSkill rdf:resource="http://example.org/ontology#AI_Model_Dev"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://example.org/ontology#%EC%83%9D%EC%84%B1%ED%98%95_AI_%EA%B8%B0%EB%B0%98%EC%9D%98_%EB%B2%95%EB%AC%B4%EC%A0%95%EB%B3%B4_%EA%B2%80%EC%83%89_%EB%B0%8F_%EC%9A%94%EC%95%BD_%EA%B8%B0%EC%88%A0_%EA%B0%9C%EB%B0%9C">
+        <rdf:type rdf:resource="http://example.org/ontology#Project"/>
+        <rdfs:label>생성형 AI 기반의 법무정보 검색 및 요약 기술 개발</rdfs:label>
+        <requiresSkill rdf:resource="http://example.org/ontology#Data_Platform"/>
+        <requiresSkill rdf:resource="http://example.org/ontology#NLP"/>
+        <requiresSkill rdf:resource="http://example.org/ontology#AI_Model_Dev"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://example.org/ontology#AI_Assistant_for_Power">
+        <rdf:type rdf:resource="http://example.org/ontology#Project"/>
+        <rdfs:label>AI Assistant for Power</rdfs:label>
+        <requiresSkill rdf:resource="http://example.org/ontology#Power_Domain"/>
+        <requiresSkill rdf:resource="http://example.org/ontology#NLP"/>
+        <requiresSkill rdf:resource="http://example.org/ontology#AI_Model_Dev"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://example.org/ontology#Agentic_AI_for_Power">
+        <rdf:type rdf:resource="http://example.org/ontology#Project"/>
+        <rdfs:label>Agentic AI for Power</rdfs:label>
+        <requiresSkill rdf:resource="http://example.org/ontology#Power_Domain"/>
+        <requiresSkill rdf:resource="http://example.org/ontology#Programming"/>
+        <requiresSkill rdf:resource="http://example.org/ontology#AI_Model_Dev"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://example.org/ontology#%EB%B3%80%EC%A0%84%EC%86%8C_%EB%AC%B4%EC%9D%B8%EB%B3%B4%EC%95%88%EC%8B%9C%EC%8A%A4%ED%85%9C_%ED%99%95%EC%82%B0%EC%9D%84_%EC%9C%84%ED%95%9C_%EC%98%81%EC%83%81AI_%EA%B4%80%EC%A0%9C%EB%AA%A8%EB%8D%B8_%EC%84%B1%EB%8A%A5_%EB%B0%8F_%ED%99%9C%EC%9A%A9%EC%84%B1_%EA%B0%9C%EC%84%A0">
+        <rdf:type rdf:resource="http://example.org/ontology#Project"/>
+        <rdfs:label>변전소 무인보안시스템 확산을 위한 영상AI 관제모델 성능 및 활용성 개선</rdfs:label>
+        <requiresSkill rdf:resource="http://example.org/ontology#System_Control"/>
+        <requiresSkill rdf:resource="http://example.org/ontology#Computer_Vision"/>
+        <requiresSkill rdf:resource="http://example.org/ontology#AI_Model_Dev"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://example.org/ontology#V2G%EC%9D%98_%ED%99%95%EB%8C%80%EB%B3%B4%EA%B8%89%EC%9D%84_%EC%9C%84%ED%95%9C_%EB%8B%A4%EB%AA%A9%EC%A0%81_%EC%96%91%EB%B0%A9%ED%96%A5%EC%B6%A9%EC%A0%84%EA%B8%B0_%EA%B0%9C%EB%B0%A9%ED%98%95_%EC%86%94%EB%A3%A8%EC%85%98_%EA%B0%9C%EB%B0%9C">
+        <rdf:type rdf:resource="http://example.org/ontology#Project"/>
+        <rdfs:label>V2G의 확대보급을 위한 다목적 양방향충전기 개방형 솔루션 개발</rdfs:label>
+        <requiresSkill rdf:resource="http://example.org/ontology#Power_Domain"/>
+        <requiresSkill rdf:resource="http://example.org/ontology#Network_Telecom"/>
+        <requiresSkill rdf:resource="http://example.org/ontology#System_Control"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://example.org/ontology#%EC%A0%84%EB%A0%A5_ICT_%EC%84%BC%ED%84%B0_%EB%A1%9C%EB%B4%87_%EC%A0%81%EC%9A%A9_%EA%B8%B0%EC%A4%80_%EC%88%98%EB%A6%BD_%EB%B0%8F_%EC%8B%A4%EC%A6%9D">
+        <rdf:type rdf:resource="http://example.org/ontology#Project"/>
+        <rdfs:label>전력 ICT 센터 로봇 적용 기준 수립 및 실증</rdfs:label>
+        <requiresSkill rdf:resource="http://example.org/ontology#Network_Telecom"/>
+        <requiresSkill rdf:resource="http://example.org/ontology#System_Control"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://example.org/ontology#%EA%B3%A0%EC%8B%A0%EB%A2%B0_%EA%B4%91%EC%97%AD_%EB%AC%B4%EC%84%A0%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC_%EA%B8%B0%EC%88%A0%EA%B0%9C%EB%B0%9C_%EB%B0%8F_%EC%84%9C%EB%B9%84%EC%8A%A4_%EC%9A%B4%EC%98%81%EC%8B%A4%EC%A6%9D">
+        <rdf:type rdf:resource="http://example.org/ontology#Project"/>
+        <rdfs:label>고신뢰 광역 무선네트워크 기술개발 및 서비스 운영실증</rdfs:label>
+        <requiresSkill rdf:resource="http://example.org/ontology#Data_Platform"/>
+        <requiresSkill rdf:resource="http://example.org/ontology#Network_Telecom"/>
+        <requiresSkill rdf:resource="http://example.org/ontology#Programming"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://example.org/ontology#e-WSN_%EB%8B%A8%EB%A7%90%EA%B4%80%EB%A6%AC_%EC%8B%9C%EC%8A%A4%ED%85%9C_EMS__%EC%9A%B4%EC%98%81%EA%B8%B0%EC%88%A0_%EA%B0%9C%EB%B0%9C">
+        <rdf:type rdf:resource="http://example.org/ontology#Project"/>
+        <rdfs:label>e-WSN 단말관리 시스템(EMS) 운영기술 개발</rdfs:label>
+        <requiresSkill rdf:resource="http://example.org/ontology#System_Control"/>
+        <requiresSkill rdf:resource="http://example.org/ontology#Data_Platform"/>
+        <requiresSkill rdf:resource="http://example.org/ontology#Network_Telecom"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
