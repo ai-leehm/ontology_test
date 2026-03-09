@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns="http://example.org/ontology/team_portfolio#"
+     xml:base="http://example.org/ontology/team_portfolio"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+
+    <owl:Ontology rdf:about="http://example.org/ontology/team_portfolio"/>
+
+    <owl:ObjectProperty rdf:about="#hasSkill"/>
+    <owl:ObjectProperty rdf:about="#hasInterest"/>
+    <owl:ObjectProperty rdf:about="#participatedIn"/>
+    <owl:ObjectProperty rdf:about="#requiresSkill"/>
+
+    <owl:Class rdf:about="#팀원_이현민">
+        <rdfs:subClassOf><owl:Restriction><owl:onProperty rdf:resource="#hasSkill"/><owl:someValuesFrom rdf:resource="#자연어처리"/></owl:Restriction></rdfs:subClassOf>
+        <rdfs:subClassOf><owl:Restriction><owl:onProperty rdf:resource="#hasSkill"/><owl:someValuesFrom rdf:resource="#LLM"/></owl:Restriction></rdfs:subClassOf>
+        <rdfs:subClassOf><owl:Restriction><owl:onProperty rdf:resource="#hasSkill"/><owl:someValuesFrom rdf:resource="#Python"/></owl:Restriction></rdfs:subClassOf>
+        <rdfs:subClassOf><owl:Restriction><owl:onProperty rdf:resource="#hasSkill"/><owl:someValuesFrom rdf:resource="#PyTorch"/></owl:Restriction></rdfs:subClassOf>
+        <rdfs:subClassOf><owl:Restriction><owl:onProperty rdf:resource="#hasSkill"/><owl:someValuesFrom rdf:resource="#SFT"/></owl:Restriction></rdfs:subClassOf>
+        <rdfs:subClassOf><owl:Restriction><owl:onProperty rdf:resource="#hasSkill"/><owl:someValuesFrom rdf:resource="#RAG"/></owl:Restriction></rdfs:subClassOf>
+        <rdfs:subClassOf><owl:Restriction><owl:onProperty rdf:resource="#participatedIn"/><owl:someValuesFrom rdf:resource="#과제_반부패챗봇"/></owl:Restriction></rdfs:subClassOf>
+        <rdfs:subClassOf><owl:Restriction><owl:onProperty rdf:resource="#participatedIn"/><owl:someValuesFrom rdf:resource="#과제_아크탐지_솔루션"/></owl:Restriction></rdfs:subClassOf>
+        <rdfs:subClassOf><owl:Restriction><owl:onProperty rdf:resource="#hasInterest"/><owl:someValuesFrom rdf:resource="#생성형AI"/></owl:Restriction></rdfs:subClassOf>
+    </owl:Class>
+
+    <owl:Class rdf:about="#팀원_김아영">
+        <rdfs:subClassOf><owl:Restriction><owl:onProperty rdf:resource="#hasSkill"/><owl:someValuesFrom rdf:resource="#자연어처리"/></owl:Restriction></rdfs:subClassOf>
+        <rdfs:subClassOf><owl:Restriction><owl:onProperty rdf:resource="#hasSkill"/><owl:someValuesFrom rdf:resource="#기계학습"/></owl:Restriction></rdfs:subClassOf>
+        <rdfs:subClassOf><owl:Restriction><owl:onProperty rdf:resource="#hasSkill"/><owl:someValuesFrom rdf:resource="#Python"/></owl:Restriction></rdfs:subClassOf>
+        <rdfs:subClassOf><owl:Restriction><owl:onProperty rdf:resource="#participatedIn"/><owl:someValuesFrom rdf:resource="#과제_반부패챗봇"/></owl:Restriction></rdfs:subClassOf>
+        <rdfs:subClassOf><owl:Restriction><owl:onProperty rdf:resource="#participatedIn"/><owl:someValuesFrom rdf:resource="#과제_항공사진_태양광"/></owl:Restriction></rdfs:subClassOf>
+        <rdfs:subClassOf><owl:Restriction><owl:onProperty rdf:resource="#participatedIn"/><owl:someValuesFrom rdf:resource="#과제_전력ICT_로봇"/></owl:Restriction></rdfs:subClassOf>
+        <rdfs:subClassOf><owl:Restriction><owl:onProperty rdf:resource="#participatedIn"/><owl:someValuesFrom rdf:resource="#과제_법무정보_검색요약"/></owl:Restriction></rdfs:subClassOf>
+        <rdfs:subClassOf><owl:Restriction><owl:onProperty rdf:resource="#participatedIn"/><owl:someValuesFrom rdf:resource="#과제_변전소_영상AI관제"/></owl:Restriction></rdfs:subClassOf>
+        <rdfs:subClassOf><owl:Restriction><owl:onProperty rdf:resource="#hasInterest"/><owl:someValuesFrom rdf:resource="#영상진단관제"/></owl:Restriction></rdfs:subClassOf>
+        <rdfs:subClassOf><owl:Restriction><owl:onProperty rdf:resource="#hasInterest"/><owl:someValuesFrom rdf:resource="#생성형AI"/></owl:Restriction></rdfs:subClassOf>
+    </owl:Class>
+
+    <owl:Class rdf:about="#팀원_장민영">
+        <rdfs:subClassOf><owl:Restriction><owl:onProperty rdf:resource="#hasSkill"/><owl:someValuesFrom rdf:resource="#AI모델_아키텍쳐_설계"/></owl:Restriction></rdfs:subClassOf>
+        <rdfs:subClassOf><owl:Restriction><owl:onProperty rdf:resource="#hasSkill"/><owl:someValuesFrom rdf:resource="#AI모델_성능_평가"/></owl:Restriction></rdfs:subClassOf>
+        <rdfs:subClassOf><owl:Restriction><owl:onProperty rdf:resource="#hasSkill"/><owl:someValuesFrom rdf:resource="#분산컴퓨팅_설계"/></owl:Restriction></rdfs:subClassOf>
+        <rdfs:subClassOf><owl:Restriction><owl:onProperty rdf:resource="#hasSkill"/><owl:someValuesFrom rdf:resource="#정보_검색"/></owl:Restriction></rdfs:subClassOf>
+        <rdfs:subClassOf><owl:Restriction><owl:onProperty rdf:resource="#hasSkill"/><owl:someValuesFrom rdf:resource="#딥러닝_프레임워크"/></owl:Restriction></rdfs:subClassOf>
+        <rdfs:subClassOf><owl:Restriction><owl:onProperty rdf:resource="#hasSkill"/><owl:someValuesFrom rdf:resource="#자연어처리"/></owl:Restriction></rdfs:subClassOf>
+        <rdfs:subClassOf><owl:Restriction><owl:onProperty rdf:resource="#participatedIn"/><owl:someValuesFrom rdf:resource="#과제_AI_Assistant"/></owl:Restriction></rdfs:subClassOf>
+        <rdfs:subClassOf><owl:Restriction><owl:onProperty rdf:resource="#participatedIn"/><owl:someValuesFrom rdf:resource="#과제_Agentic_AI"/></owl:Restriction></rdfs:subClassOf>
+        <rdfs:subClassOf><owl:Restriction><owl:onProperty rdf:resource="#hasInterest"/><owl:someValuesFrom rdf:resource="#생성형AI"/></owl:Restriction></rdfs:subClassOf>
+    </owl:Class>
+
+    <owl:Class rdf:about="#과제_반부패챗봇">
+        <rdfs:subClassOf><owl:Restriction><owl:onProperty rdf:resource="#requiresSkill"/><owl:someValuesFrom rdf:resource="#LLM"/></owl:Restriction></rdfs:subClassOf>
+        <rdfs:subClassOf><owl:Restriction><owl:onProperty rdf:resource="#requiresSkill"/><owl:someValuesFrom rdf:resource="#RAG"/></owl:Restriction></rdfs:subClassOf>
+        <rdfs:subClassOf><owl:Restriction><owl:onProperty rdf:resource="#requiresSkill"/><owl:someValuesFrom rdf:resource="#SFT"/></owl:Restriction></rdfs:subClassOf>
+        <rdfs:subClassOf><owl:Restriction><owl:onProperty rdf:resource="#requiresSkill"/><owl:someValuesFrom rdf:resource="#자연어처리"/></owl:Restriction></rdfs:subClassOf>
+        <rdfs:subClassOf><owl:Restriction><owl:onProperty rdf:resource="#requiresSkill"/><owl:someValuesFrom rdf:resource="#Python"/></owl:Restriction></rdfs:subClassOf>
+    </owl:Class>
+
+    <owl:Class rdf:about="#과제_아크탐지_솔루션">
+        <rdfs:subClassOf><owl:Restriction><owl:onProperty rdf:resource="#requiresSkill"/><owl:someValuesFrom rdf:resource="#Computer_Vision"/></owl:Restriction></rdfs:subClassOf>
+        <rdfs:subClassOf><owl:Restriction><owl:onProperty rdf:resource="#requiresSkill"/><owl:someValuesFrom rdf:resource="#PyTorch"/></owl:Restriction></rdfs:subClassOf>
+    </owl:Class>
+
+    <owl:Class rdf:about="#과제_항공사진_태양광">
+        <rdfs:subClassOf><owl:Restriction><owl:onProperty rdf:resource="#requiresSkill"/><owl:someValuesFrom rdf:resource="#Computer_Vision"/></owl:Restriction></rdfs:subClassOf>
+        <rdfs:subClassOf><owl:Restriction><owl:onProperty rdf:resource="#requiresSkill"/><owl:someValuesFrom rdf:resource="#기계학습"/></owl:Restriction></rdfs:subClassOf>
+        <rdfs:subClassOf><owl:Restriction><owl:onProperty rdf:resource="#requiresSkill"/><owl:someValuesFrom rdf:resource="#Python"/></owl:Restriction></rdfs:subClassOf>
+    </owl:Class>
+
+    <owl:Class rdf:about="#과제_전력ICT_로봇">
+        <rdfs:subClassOf><owl:Restriction><owl:onProperty rdf:resource="#requiresSkill"/><owl:someValuesFrom rdf:resource="#Robotics"/></owl:Restriction></rdfs:subClassOf>
+        <rdfs:subClassOf><owl:Restriction><owl:onProperty rdf:resource="#requiresSkill"/><owl:someValuesFrom rdf:resource="#ROS"/></owl:Restriction></rdfs:subClassOf>
+    </owl:Class>
+
+    <owl:Class rdf:about="#과제_법무정보_검색요약">
+        <rdfs:subClassOf><owl:Restriction><owl:onProperty rdf:resource="#requiresSkill"/><owl:someValuesFrom rdf:resource="#LLM"/></owl:Restriction></rdfs:subClassOf>
+        <rdfs:subClassOf><owl:Restriction><owl:onProperty rdf:resource="#requiresSkill"/><owl:someValuesFrom rdf:resource="#자연어처리"/></owl:Restriction></rdfs:subClassOf>
+        <rdfs:subClassOf><owl:Restriction><owl:onProperty rdf:resource="#requiresSkill"/><owl:someValuesFrom rdf:resource="#정보_검색"/></owl:Restriction></rdfs:subClassOf>
+    </owl:Class>
+
+    <owl:Class rdf:about="#과제_변전소_영상AI관제">
+        <rdfs:subClassOf><owl:Restriction><owl:onProperty rdf:resource="#requiresSkill"/><owl:someValuesFrom rdf:resource="#Computer_Vision"/></owl:Restriction></rdfs:subClassOf>
+        <rdfs:subClassOf><owl:Restriction><owl:onProperty rdf:resource="#requiresSkill"/><owl:someValuesFrom rdf:resource="#딥러닝_프레임워크"/></owl:Restriction></rdfs:subClassOf>
+    </owl:Class>
+
+    <owl:Class rdf:about="#과제_AI_Assistant">
+        <rdfs:subClassOf><owl:Restriction><owl:onProperty rdf:resource="#requiresSkill"/><owl:someValuesFrom rdf:resource="#LLM"/></owl:Restriction></rdfs:subClassOf>
+        <rdfs:subClassOf><owl:Restriction><owl:onProperty rdf:resource="#requiresSkill"/><owl:someValuesFrom rdf:resource="#자연어처리"/></owl:Restriction></rdfs:subClassOf>
+        <rdfs:subClassOf><owl:Restriction><owl:onProperty rdf:resource="#requiresSkill"/><owl:someValuesFrom rdf:resource="#정보_검색"/></owl:Restriction></rdfs:subClassOf>
+    </owl:Class>
+
+    <owl:Class rdf:about="#과제_Agentic_AI">
+        <rdfs:subClassOf><owl:Restriction><owl:onProperty rdf:resource="#requiresSkill"/><owl:someValuesFrom rdf:resource="#LLM"/></owl:Restriction></rdfs:subClassOf>
+        <rdfs:subClassOf><owl:Restriction><owl:onProperty rdf:resource="#requiresSkill"/><owl:someValuesFrom rdf:resource="#Agentic_Workflow"/></owl:Restriction></rdfs:subClassOf>
+        <rdfs:subClassOf><owl:Restriction><owl:onProperty rdf:resource="#requiresSkill"/><owl:someValuesFrom rdf:resource="#분산컴퓨팅_설계"/></owl:Restriction></rdfs:subClassOf>
+    </owl:Class>
+
+    <owl:Class rdf:about="#자연어처리"/>
+    <owl:Class rdf:about="#LLM"/>
+    <owl:Class rdf:about="#Python"/>
+    <owl:Class rdf:about="#PyTorch"/>
+    <owl:Class rdf:about="#SFT"/>
+    <owl:Class rdf:about="#RAG"/>
+    <owl:Class rdf:about="#기계학습"/>
+    <owl:Class rdf:about="#딥러닝_프레임워크"/>
+    <owl:Class rdf:about="#AI모델_아키텍쳐_설계"/>
+    <owl:Class rdf:about="#AI모델_성능_평가"/>
+    <owl:Class rdf:about="#분산컴퓨팅_설계"/>
+    <owl:Class rdf:about="#정보_검색"/>
+    
+    <owl:Class rdf:about="#Computer_Vision"/>
+    <owl:Class rdf:about="#Robotics"/>
+    <owl:Class rdf:about="#ROS"/>
+    <owl:Class rdf:about="#Agentic_Workflow"/>
+
+    <owl:Class rdf:about="#생성형AI"/>
+    <owl:Class rdf:about="#영상진단관제"/>
+
+</rdf:RDF>
