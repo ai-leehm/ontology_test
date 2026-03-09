@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://example.org/ontology/my_competency#"
+     xml:base="http://example.org/ontology/my_competency"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+
+    <owl:Ontology rdf:about="http://example.org/ontology/my_competency"/>
+
+    <owl:Class rdf:about="#Person"/>
+    <owl:Class rdf:about="#Skill"/>
+    <owl:Class rdf:about="#ResearchTopic"/>
+    <owl:Class rdf:about="#ResearchProject"/>
+    <owl:Class rdf:about="#Task"/>
+    <owl:Class rdf:about="#Deliverable"/>
+
+    <owl:ObjectProperty rdf:about="#hasSkill">
+        <rdfs:domain rdf:resource="#Person"/>
+        <rdfs:range rdf:resource="#Skill"/>
+    </owl:ObjectProperty>
+    
+    <owl:ObjectProperty rdf:about="#participatedIn">
+        <rdfs:domain rdf:resource="#Person"/>
+        <rdfs:range rdf:resource="#ResearchProject"/>
+    </owl:ObjectProperty>
+
+    <owl:ObjectProperty rdf:about="#requiresSkill">
+        <rdfs:range rdf:resource="#Skill"/>
+    </owl:ObjectProperty>
+
+    <owl:ObjectProperty rdf:about="#hasTask">
+        <rdfs:domain rdf:resource="#ResearchProject"/>
+        <rdfs:range rdf:resource="#Task"/>
+    </owl:ObjectProperty>
+
+    <owl:ObjectProperty rdf:about="#produced">
+        <rdfs:domain rdf:resource="#Task"/>
+        <rdfs:range rdf:resource="#Deliverable"/>
+    </owl:ObjectProperty>
+
+    <owl:NamedIndividual rdf:about="#PyTorch">
+        <rdf:type rdf:resource="#Skill"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="#MySelf">
+        <rdf:type rdf:resource="#Person"/>
+        <hasSkill rdf:resource="#PyTorch"/>
+        <participatedIn rdf:resource="#Project_A"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="#Project_A">
+        <rdf:type rdf:resource="#ResearchProject"/>
+        <hasTask rdf:resource="#Task_NoiseReduction"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="#Task_NoiseReduction">
+        <rdf:type rdf:resource="#Task"/>
+        <requiresSkill rdf:resource="#PyTorch"/>
+        <produced rdf:resource="#Algo_Code_01"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="#Algo_Code_01">
+        <rdf:type rdf:resource="#Deliverable"/>
+    </owl:NamedIndividual>
+
+</rdf:RDF>
